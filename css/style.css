@@ -1,0 +1,74 @@
+/* common css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clr {
+    clear: both;
+}
+
+
+/* my css */
+
+.container {
+    border: #CD5C5C solid;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+h2 {
+    margin: 100px auto;
+
+    font-family: sans-serif;
+    font-size: 40px;
+    color: teal;
+    background-color: white;
+
+    position: relative;
+    display: inline-block;
+
+}
+
+h2::before {
+
+    width: 400px;
+    height: 5px;
+    content: "";
+    background: #CD5C5C;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: -1;
+
+}
+
+h2::after {
+
+    width: 5px;
+    height: 150px;
+    content: "";
+    background: #CD5C5C;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+
+}
